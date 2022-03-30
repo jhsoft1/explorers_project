@@ -1,0 +1,15 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Treasure submission</title>
+</head>
+
+<body>
+    <form method='POST'>{% csrf_token %}
+      {{ treasure_formset.as_p }}
+      <input type='submit' value="Submit treasure">
+    </form>
+</body>
+</html>
